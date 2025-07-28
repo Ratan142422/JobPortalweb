@@ -122,9 +122,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_job']) && isse
         $stmt->close();
     }
 }
-
-$conn->close();
-
 if (!isset($_SESSION['recruiter_loggedin']) || $_SESSION['recruiter_loggedin'] !== true):
 ?>
 <!DOCTYPE html>
